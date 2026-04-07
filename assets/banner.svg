@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#0d0b1a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="150" y1="80" x2="750" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e879f9"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="300" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="450" cy="140" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="300" cy="100" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Ambient glows -->
+  <rect width="900" height="320" fill="url(#glow1)" rx="12"/>
+  <rect width="900" height="320" fill="url(#glow2)" rx="12"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.6" fill="#ffffff" opacity="0.07"/>
+  </pattern>
+  <rect width="900" height="320" fill="url(#dots)" rx="12"/>
+
+  <!-- Top decorative line -->
+  <rect x="300" y="40" width="300" height="1" fill="url(#line)" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="450" y="108" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="800" fill="url(#textGrad)" filter="url(#softglow)" letter-spacing="-1">
+    Code. Execute. Collaborate.
+  </text>
+
+  <!-- Accent line under tagline -->
+  <rect x="380" y="124" width="140" height="3" fill="url(#line)" rx="1.5"/>
+
+  <!-- Subtitle -->
+  <text x="450" y="164" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a1a1aa" letter-spacing="0.3">
+    A developer playground today. A real-time coding platform tomorrow.
+  </text>
+
+  <!-- Pill badges -->
+  <!-- Language pills row 1 -->
+  <g transform="translate(450, 200)" text-anchor="middle" font-family="'Segoe UI Mono', 'Cascadia Mono', 'Consolas', monospace" font-size="11.5" font-weight="600">
+    <!-- JavaScript -->
+    <rect x="-260" y="-12" width="68" height="24" rx="12" fill="#f7df1e" opacity="0.15"/>
+    <text x="-226" y="5" fill="#f7df1e">JS</text>
+    <!-- Python -->
+    <rect x="-178" y="-12" width="80" height="24" rx="12" fill="#3b82f6" opacity="0.15"/>
+    <text x="-138" y="5" fill="#60a5fa">Python</text>
+    <!-- Java -->
+    <rect x="-84" y="-12" width="66" height="24" rx="12" fill="#f97316" opacity="0.15"/>
+    <text x="-51" y="5" fill="#fb923c">Java</text>
+    <!-- Go -->
+    <rect x="-4" y="-12" width="56" height="24" rx="12" fill="#06b6d4" opacity="0.15"/>
+    <text x="24" y="5" fill="#22d3ee">Go</text>
+    <!-- Rust -->
+    <rect x="66" y="-12" width="64" height="24" rx="12" fill="#f97316" opacity="0.15"/>
+    <text x="98" y="5" fill="#fb923c">Rust</text>
+    <!-- C -->
+    <rect x="144" y="-12" width="40" height="24" rx="12" fill="#a78bfa" opacity="0.15"/>
+    <text x="164" y="5" fill="#a78bfa">C</text>
+    <!-- C++ -->
+    <rect x="198" y="-12" width="54" height="24" rx="12" fill="#a78bfa" opacity="0.15"/>
+    <text x="225" y="5" fill="#a78bfa">C++</text>
+  </g>
+
+  <!-- Bottom info line -->
+  <text x="450" y="258" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#52525b" letter-spacing="0.5">
+    Docker-sandboxed execution  ·  Monaco editor  ·  Mobile responsive  ·  Run history
+  </text>
+
+  <!-- Bottom decorative line -->
+  <rect x="300" y="280" width="300" height="1" fill="url(#line)" opacity="0.3"/>
+</svg>
