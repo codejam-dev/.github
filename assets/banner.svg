@@ -89,7 +89,7 @@
 
   <!-- Bottom info line -->
   <text x="450" y="258" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#52525b" letter-spacing="0.5">
-    Docker-sandboxed execution  ·  Monaco editor  ·  Mobile responsive  ·  Run history
+    Docker-sandboxed execution  &#183;  Monaco editor  &#183;  Mobile responsive  &#183;  Run history
   </text>
 
   <!-- Bottom decorative line -->
